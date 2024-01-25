@@ -4,6 +4,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+	// form function
+
+	function callBackendEndpoint() {
+		fetch('http://localhost:3000/form')
+			.then(response => response.json())
+			.then(data => console.log(data))
+			.catch(error => console.error('Error:', error));
+	}
+
 (function($) {
 
 	var	$window = $(window),
